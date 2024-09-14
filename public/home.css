@@ -1,0 +1,343 @@
+
+
+
+/* Reset default margin and padding */
+body, ul {
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #f2f2f2;
+    color: #fff;
+    padding: 15px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ccc;
+}
+
+/* Content styles */
+.content {
+    padding: 50px;
+    text-align: center;
+}
+
+/* Footer styles */
+.footer {
+    background-color:#f8f9fa;
+    color: #080808;
+    padding: 20px 0;
+    text-align: center;
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure the footer is above other elements */
+}
+.login-footer{
+    background-color:#f8f9fa;
+    color: #080808;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure the footer is above other elements */
+}
+.err-footer{
+    background-color:#f8f9fa;
+    color: #080808;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure the footer is above other elements */
+}
+
+.container2 {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+.content {
+    max-width: 1600px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.hero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.hero .fade {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+
+.about {
+    padding: 100px 0;  
+      
+}
+
+.about p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;    
+    font-style: italic; 
+}
+
+.about h2{
+    color: #6a6a6a;
+}
+
+/* Work styles */
+
+.work-container {
+    flex: 1;
+}
+
+.mywork{
+    width: 100%;
+    
+    background-color: #f8f9fa; /* Light background color for footer */
+    text-align: center;
+    /* padding: 10px 0; */
+}
+
+.mywork h1 {
+    margin-top: 30px;
+    font-size: 2em;
+    color: #000000;
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center;
+    font-family: system-ui, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.work-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa; /* Light background color for footer */
+    text-align: center;
+    padding: 10px ;
+    display: flex;
+    justify-content: center; /* Aligns content horizontally */
+    align-items: center; /* Aligns content vertically */
+}
+
+
+
+/* my skills */
+
+.myskills{
+    color: #6a6a6a;
+}
+
+.service-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.service-box {
+    flex: 1 1 300px; /* Flexbox properties to make each box responsive */
+    max-width: 300px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-box h2 {
+    margin-top: 0;
+}
+
+/* Adjust other styles as needed */
+
+.project-info {
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* Contact styles */
+.form-container{
+    display: flex;
+    justify-content: center; /* Center the form horizontally */
+    align-items: flex-start; /* Align items at the top to prevent overflow */
+    min-height:calc(100vh - 150px); 
+    padding: 20px;
+    overflow-y: auto; /* Allow vertical scrolling if necessary */
+}
+form {
+    width: 100%; /* Make the form responsive */
+    max-width: 500px; /* Limit the form width */
+    margin-bottom: 20px; /* Ensure space above the footer */
+}
+textarea {
+    height: 100px; /* Set initial height */
+    max-height: 200px; /* Set max height */
+    overflow-y: auto; /* Enable scrolling within the textarea */
+}
+
+h4 {
+    text-align: center; /* Center the header */
+    margin-bottom: 20px; /* Add space between header and form */
+}
+
+
+.link {
+    margin-bottom: 5px;
+    color: #5a5b5b;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.cont-footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa; /* Light background color for footer */
+   text-align: center;
+    padding: 10px 0;
+} 
+
+.cont-footer .link {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between icons */
+}
+
+/* signup */
+.signup-container {
+    min-height: 100vh;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signup-form {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+.login-footer {
+    margin-top: auto;
+}
+
+/* login */
+
+.login-container {
+    flex-direction: column;
+    min-height: 100vh;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-form {
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+.login-footer {
+    margin-top: auto;
+}
+
+
+
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        margin-top: 20px;
+    }
+
+    .content {
+        padding: 20px;
+    }
+}
+
