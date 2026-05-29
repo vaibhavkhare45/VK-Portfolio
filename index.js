@@ -56,7 +56,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // session options
 const sessionOptions = {
-    secret: "process.env.SECRET",
+    secret: process.env.SECRET || 'fallback-dev-secret-change-me',
     resave: false,
     saveUninitialized: false,
     cookie: {
